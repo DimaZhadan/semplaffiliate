@@ -556,12 +556,11 @@ body {
 
 .footer__sections {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.footer__secrion {
-	min-width: 356px;
-}
+
 
 .footer__logo {
 	margin-top: 60px;
@@ -620,12 +619,14 @@ body {
 }
 
 .articles__text-link {
-
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 112%;
 	color: #1D2F38;
+}
 
+.articles__text-link:hover {
+	text-decoration: underline;
 }
 
 
@@ -650,7 +651,7 @@ body {
 	padding: 14px 20px;
 	background: #768F9C;
 	border-radius: 0px 5px 5px 0px;
-	margin-left: -3px;
+	margin-left: -4px;
 }
 
 .footer__form-btn:hover {
@@ -705,7 +706,7 @@ body {
 	color: #1D2F38;
 }
 
-.botomdecore:not(:last-child){
+.botomdecore:not(:last-child) {
 	margin-right: 10px;
 }
 
@@ -837,6 +838,18 @@ body {
 	.signup__mail {
 		padding: 10px 0px 10px 16px;
 	}
+
+	/*footer*/
+	.footer__sections {
+		flex: 0 1 50%;
+		
+	}
+	.footer__sections:last-child {
+		flex: 1 1 100%;
+	}
+	.adopt{
+		justify-content: space-around;
+	}
 }
 
 /*768px-992px*/
@@ -882,6 +895,9 @@ body {
 	.signup__img {
 		width: 300px;
 	}
+
+	/*footer*/
+
 }
 
 /*576px-768px*/
@@ -1106,7 +1122,9 @@ body {
 		display: block;
 		padding-top: 15px;
 	}
-
+	/*footer*/
+.
+	
 }
 
 
